@@ -1,0 +1,30 @@
+---
+import "../styles/global.css";
+import Header from "../conponents/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Home";
+---
+
+<BaseLayout pageTitle={title}>
+  <Header />
+  <main>
+    <h1>Welcome to the Home Page</h1>
+    <p>This is the main content of the homepage.</p>
+  </main>
+</BaseLayout>
+
+<style>
+  /* Main Content */
+  main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    color: #333;
+  }
+</style>
